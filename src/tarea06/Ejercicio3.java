@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Tarea06;
+package tarea06;
 
 /**
  * @author Palmira
@@ -26,18 +26,19 @@ public class Ejercicio3 {
 		}
 	}
 
-	public boolean esPrimo(int num) {
+	public static boolean esPrimo(int num) {
 		int contador = 2;
 		boolean primo = true;
-
-		while (primo && (contador != num)) {
-			if (num % contador == 0 || num <= 1) {
-				primo = false;
+		num = Math.abs(num);
+		if (contador < num) {
+			do {
+				primo = ((num % contador) == 0) ? false : true;
 				contador++;
-			} else {
-				return primo;
-			}
+			} while (primo && (contador < num));
+		} else if (num == 0 || num == 1) {
+			primo = false;
 		}
+		
 		return primo;
 	}
 

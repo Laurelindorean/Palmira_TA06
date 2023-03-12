@@ -1,4 +1,4 @@
-package Tarea06;
+package tarea06;
 
 public class Ejercicio2 {
 
@@ -24,7 +24,7 @@ public class Ejercicio2 {
 		}
 	}
 
-	public int generarRandom(int min, int max) {
+	public static int generarRandom(int min, int max) {
 		int rango = max - min + 1;
 		int numeroAleatorio = (int) (Math.random() * rango) + min;
 		return numeroAleatorio;

@@ -1,8 +1,9 @@
 /**
  * 
  */
-package Tarea06;
+package tarea06;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -30,10 +31,23 @@ public class Utils {
 		double numero = sc.nextDouble();
 		return numero;
 	}
+
 	public static long pedirLong() {
 		Scanner sc = new Scanner(System.in);
 		long numero = sc.nextInt();
 		return numero;
+	}
+
+	public static int generarRandom(int min, int max) {
+		Random random = new Random();
+		int numRandom = random.nextInt(max - min) + min;
+		return numRandom;
+	}
+
+	public static void imprimirArray(int[] array) {
+		for (int i = 0; i < array.length; i++) {
+			System.out.println(array[i]);
+		}
 	}
 
 }

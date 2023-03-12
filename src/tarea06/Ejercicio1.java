@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Tarea06;
+package tarea06;
 
 /**
  * @author Palmira

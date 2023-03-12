@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Tarea06;
+package tarea06;
 
 /**
  * @author Palmira
@@ -38,6 +38,33 @@ public class MainApp {
 			Ejercicio6 ej6 = new Ejercicio6();
 			ej6.pedirNumero();
 			break;
+		case 7:
+			Ejercicio7 ej7 = new Ejercicio7();
+			ej7.pedirOpcion();
+			break;
+		case 8:
+			Ejercicio8 ej8 = new Ejercicio8();
+			ej8.pedirValores();
+			break;
+		case 9:
+			Ejercicio9 ej9 = new Ejercicio9();
+			ej9.pedirArray();
+			break;
+		case 10:
+			Ejercicio10 ej10 = new Ejercicio10();
+			ej10.pedirArray();
+			break;
+		case 11:
+			Ejercicio11 ej11 = new Ejercicio11();
+			ej11.arrayRandom();
+			break;
+		case 12:
+			Ejercicio12 ej12 = new Ejercicio12();
+			ej12.generarArray();
+			break;
+		default:
+			System.out.println("Error. Debes introducir un número del 1-12");
+
 		}
 
 	}
