@@ -29,6 +29,7 @@ public class Ejercicio12 {
 		}
 		if (numCorrecto(numero)) {
 			int[] arrayRandom = generarArrayNumRandom(size, numero, MIN, MAX);
+			System.out.println("Nuestro array de números terminados en " + numero);
 			Utils.imprimirArray(arrayRandom);
 		}
 	}
